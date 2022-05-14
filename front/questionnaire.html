@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="ru"> 
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>smartDiet</title>
+    <link rel="shortcut icon" href="https://cdn-icons-png.flaticon.com/512/1229/1229451.png" type="image/x-icon">
+    <link rel="stylesheet" href="front/questionnaire.css">
+</head>
+<body>
+    <header>
+    </div>
+        <div class="background">
+        <div class="background-text"><span>smart Diet</span></div>
+    </header>
+    
+    <div class="container">
+    
+    	<form method="GET" action="/smartDiet/recommendation" class="questionnaire">
+    	
+   <p><b style="font-size:30px;">С помощью наших рекомендаций вы хотите:</b></p>
+    <p><input name="form" type="radio" value="looseWeight"> Похудеть</p>
+    <p><input name="form" type="radio" value="keepWeight"> Поддерживать форму</p>
+    <p><input name="form" type="radio" value="gainWeight" checked> Набрать массу</p>
+    
+    <br>
+    
+    <p><b style="font-size:30px;">В течение дня ваша активность:</b></p>
+    <p><input name="activity" type="radio" value="1"> Минимальная</p>
+    <p><input name="activity" type="radio" value="2"> Слабая</p>
+    <p><input name="activity" type="radio" value="3"> Умеренная</p>
+    <p><input name="activity" type="radio" value="4"> Интенсивная</p>
+    <p><input name="activity" type="radio" value="5" checked> Экстремальная</p>
+    
+    <br>
+    
+    <p><b style="font-size:30px;">Отметьте продукты, на которые вы, возможно, имеете аллергию:</b></p>
+    <p><input name="allergy" type="checkbox" value="nuts"> Орехи</p>
+    <p><input name="allergy" type="checkbox" value="citrus"> Цитрусовые</p>
+    <p><input name="allergy" type="checkbox" value="gluten"> Глютен</p>
+    <p><input name="allergy" type="checkbox" value="lactose"> Лактоза</p>
+    
+    <br>
+    
+    <p><b style="font-size:30px;">Ваши параметры:</b></p>
+    <p>Рост:<input style="margin-left: 50px;" name="height" type="text">см</p>
+    <p>Вес:<input  style="margin-left: 60px;" name="weight" type="text">кг</p>
+    <p>Возраст:<input  style="margin-left: 10px;" name="age" type="text">лет</p>
+    
+    <br>
+    
+    <p><b style="font-size:30px;">Пол:</b></p>
+    <p><input name="sex" type="radio" value="male"> Мужской</p>
+    <p><input name="sex" type="radio" value="female" checked> Женский</p>
+    
+    <br>
+    
+    <p><b style="font-size:30px;">Период, на который вы хотите сформировать рекомендацию:</b></p>
+    <p><input name="period" type="radio" value="week"> неделя</p>
+    <p><input name="period" type="radio" value="weeks"> 2 недели</p>
+    <p><input name="period" type="radio" value="month" checked> Месяц</p>
+    
+    <br>
+    
+    <p><input class="gradient-button" type="submit" value="Подобрать рацион!"></p>
+  </form> 
+  </div>
+
+</body>
+</html>

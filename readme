@@ -1,0 +1,16 @@
+Import folder to tomcat/webapps directory
+MySQL Connector must be downloaded and placed in tomcat/lib directory
+./smartDiet.sh is used to deploy project in command line from tomcat directory
+To configure smartDiet.sh for your system change paths for "javac -cp"
+
+
+
+
+To create database install MySQL, enter as "root" and do the following commands in shell:
+
+create database dishes;
+
+create table dish( dish_id int auto_increment primary key, name varchar(50) not null, first_dish bool, second_dish bool, bakery bool, garnish bool, desert bool, snack bool, salad bool, nuts bool, citrus bool, gluten bool, lactose bool, cal float not null, prot float not null, fat float not null, carb float not null );
+
+GRANT ALL PRIVILEGES ON dishes.* TO 'newuser'@'localhost';
+

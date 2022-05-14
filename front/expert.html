@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="ru"> 
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>smartDiet</title>
+    <link rel="shortcut icon" href="https://cdn-icons-png.flaticon.com/512/1229/1229451.png" type="image/x-icon">
+    <link rel="stylesheet" href="front/questionnaire.css">
+</head>
+<body>
+    <header>
+    </div>
+        <div class="background">
+        <div class="background-text"><span>smart Diet</span></div>
+    </header>
+    
+    <div class="container">
+    
+    	<form method="GET" action="/smartDiet/add" class="questionnaire">
+    	
+   <p><b style="font-size:30px;">Введите название блюда:</b></p>
+    <p><input style="margin-left: 50px;" name="dish" type="text"></p>
+    
+    <br>
+    
+    <p><b style="font-size:30px;">К каким классам вы бы отнесли указанное вами блюдо:</b></p>
+    <p><input name="time" type="checkbox" value="first"> Первое блюдо</p>
+    <p><input name="time" type="checkbox" value="second"> Второе блюдо</p>
+    <p><input name="time" type="checkbox" value="bakery"> Выпечка</p>
+    <p><input name="time" type="checkbox" value="garnish"> Гарниры</p>
+    <p><input name="time" type="checkbox" value="desert"> Десерты</p>
+    <p><input name="time" type="checkbox" value="snack"> Закуски</p>
+    <p><input name="time" type="checkbox" value="salad"> Салаты</p>
+    
+    <br>
+    
+    <p><b style="font-size:30px;">Выберите группы, к которым можно отнести это блюдо:</b></p>
+    <p><input name="allergy" type="checkbox" value="nuts"> Орехи</p>
+    <p><input name="allergy" type="checkbox" value="citrus"> Цитрусовые</p>
+    <p><input name="allergy" type="checkbox" value="gluten"> Глютен</p>
+    <p><input name="allergy" type="checkbox" value="lactose"> Лактоза</p>
+    
+    <br>
+    
+    <p><b style="font-size:30px;">Введите КБЖУ/100г:</b></p>
+    <p>Калории:<input style="margin-left: 35px;" name="cal" type="text"></p>
+    <p>Белки:<input  style="margin-left: 60px;" name="prot" type="text"></p>
+    <p>Жиры:<input  style="margin-left: 60px;" name="fat" type="text"></p>
+    <p>Углеводы:<input  style="margin-left: 23px;" name="carb" type="text"></p>
+    
+    <br>
+    
+    <p><input class="gradient-button" type="submit" value="Добавить блюдо!"></p>
+  </form> 
+  </div>
+
+</body>
+</html>
